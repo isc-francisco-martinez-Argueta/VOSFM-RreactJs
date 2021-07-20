@@ -1,0 +1,54 @@
+/** plataforma de radio **/
+.plataformasradio {
+  width: 100%;
+  color: #fff;
+  background-color: var(--black);
+}
+.plataformasradio h2 {
+  padding-top: 5px;
+  font-size: 15px;
+  font-weight: 200px;
+  color: var(--white);
+  text-align: center;
+}
+.plataformasradio .radios {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plataformasradio .radios .mystuner {
+  color: #fff;
+  width: 200;
+  padding-right: 50px;
+}
+.plataformasradio .radios .listener {
+  color: #fff;
+  width: 250px;
+  padding-right: 10px;
+}
+.box-hr {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-hr hr {
+  width: 60%;
+}
+
+@media only screen and (max-width: 590px) {
+  .plataformasradio h2 {
+    font-size: 10px;
+  }
+  .plataformasradio .radios .mystuner {
+    color: #fff;
+    width: 100px;
+    padding-right: 10px;
+  }
+  .plataformasradio .radios .listener {
+    color: #fff;
+    width: 150px;
+    padding-right: 10px;
+  }
+}

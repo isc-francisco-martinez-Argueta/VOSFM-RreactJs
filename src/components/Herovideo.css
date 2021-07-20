@@ -1,0 +1,108 @@
+#header {
+  position: relative;
+  width: 100%;
+}
+/** IMG Header **/
+#video_background {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+}
+#video_pattern {
+  background: rgb(0, 0, 0);
+  position: fixed;
+  opacity: 0.8;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.img-header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.img-header .welcome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img-header .welcome .logo {
+  width: 600px;
+}
+.img-header .welcome hr {
+  width: 400px;
+  height: 2px;
+  background: #fff;
+  border: none;
+  margin-top: 5px;
+}
+
+.img-header .welcome > a button {
+  width: 120px;
+  height: 40px;
+  background: var(--red);
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.img-header .welcome > a button:hover {
+  background: var(--blue);
+}
+
+@media only screen and (max-width: 773px) {
+  .img-header .welcome .logo {
+    width: 290px;
+  }
+  .img-header .welcome h1 {
+    font-size: 40px;
+  }
+  .img-header .welcome > button {
+    width: 130px;
+    font-size: 20px;
+  }
+  .social-float {
+    display: none;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .img-header .welcome h1 {
+    font-size: 30px;
+  }
+  .img-header .welcome hr {
+    width: 100px;
+  }
+  .img-header .welcome p {
+    font-size: 17px;
+  }
+  .img-header .welcome > button {
+    width: 100px;
+    font-size: 17px;
+  }
+}

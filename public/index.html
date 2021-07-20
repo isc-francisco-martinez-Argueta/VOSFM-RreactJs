@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta http-equiv="Expires" content="0">
+
+  <meta http-equiv="Last-Modified" content="0">
+
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+
+  <meta http-equiv="Pragma" content="no-cache">
+
+  <title>VOS FM | Radio en Linea</title>
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-startup-image" href="https://www.vosfm.com.mx/img/icon-vos.png">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <meta name="description"
+    content="Somos una estación de radio que informa, divierte y entretiene, escúchanos por la frecuencia 91.3 fm y por nuestra pagina web www.vosfm.com.mx desde Bochil Chiapas México.">
+  <link rel="canonical" href="https://www.vosfm.com.mx/">
+  <link rel="favicon" href="https://www.vosfm.com.mx/img/icon-vos.png">
+  <link rel="apple-touch-icon" href="https://www.vosfm.com.mx/img/icon-vos.png">
+  <meta name="theme-color" content="#2b6ab5">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="img/icon-vos.png" type="image/x-icon">
+
+  <meta property="og:title" name="twitter:title" content="Radio en Linea - VOS FM ">
+  <meta property="og:description" name="twitter:description"
+    content="Somos una estación de radio que informa, divierte y entretiene, escúchanos por la frecuencia 91.3 fm y por nuestra pagina web www.vosfm.com.mx desde Bochil Chiapas México.">
+  <meta property="og:image" name="twitter:image" content="https://vosfm.com.mx/img/baner-listo.png">
+  <meta property="og:url" name="twitter:url" content="https://vosfm.com.mx">
+
+
+  <meta name="application-name" content="Radio en linea" />
+  <meta name="author" content="Francisco Alberto Martinez Argueta" />
+  <meta name="keywords" content="Radio en linea, Radio, Noticias, Musica, vos fm" />
+
+
+
+  <title>VOS FM</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,500,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Messenger plugin del chat Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your plugin del chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "112156494292784");
+    chatbox.setAttribute("attribution", "page_inbox");
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v11.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+      <script src="js/main.js?n=123"></script>
+      <script src="./script.js?n=123"></script>
+    -->
+
+  <script src="%PUBLIC_URL%/script.js?n=123"></script>
+</body>
+
+</html>

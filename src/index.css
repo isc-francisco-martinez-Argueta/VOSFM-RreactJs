@@ -1,0 +1,133 @@
+:root {
+  --red: #ec3838;
+  --black: #252a34;
+  --blue: #2b6ab5;
+  --white: #eaeaea;
+  --title: 35px;
+  --text: 19px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ffff;
+  overflow-x: hidden;
+  font-family: "Red Hat Text", sans-serif;
+  transition: all 0.5s ease;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+/** Skew **/
+.gris {
+  border-color: transparent transparent #262b34 transparent !important;
+}
+.grisarriba {
+  border-color: #262b34 transparent transparent transparent !important;
+}
+.skew-abajo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 10vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.skew-arriba {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 10vh 100vw 0 0;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  z-index: 10;
+}
+
+/*********Reloj***********/
+
+.boxinforadio {
+  margin: auto;
+  width: 59%;
+  height: 40px;
+  background: var(--black);
+  border-radius: 10px;
+  color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.horareproductor {
+  width: 170px;
+  height: 19px;
+  padding: 0px 10px 0px 10px;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0%;
+  background-color: #ca3039;
+}
+
+/**reproductor**/
+.miradio {
+  margin-left: 12px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+  border: 0;
+}
+
+.player__controls {
+  display: flex;
+  width: 95%;
+  justify-content: left;
+  align-items: center;
+  outline: 0;
+  border: 0;
+}
+.player__btn {
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 0;
+  border: 0;
+}
+
+.player__audio {
+  visibility: hidden;
+}
+
+.player__btn--medium {
+  min-height: 50px;
+  min-width: 50px;
+}
+
+.blue {
+  cursor: pointer;
+  background: url(./play.png);
+  background-position: center;
+  background-size: cover;
+}
+.red {
+  cursor: pointer;
+  background: url(./pause.gif);
+  background-position: center;
+  background-size: cover;
+}
+
+.hide {
+  display: none;
+}
